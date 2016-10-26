@@ -1,0 +1,43 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+div.active {
+    -webkit-animation-name: growblue;
+    -webkit-animation-duration: 1s;
+    animation-name: growblue;
+    animation-duration: 1s;
+    background-color: blue;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes growblue {
+    0%   {
+        background-color: white;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    100%  {
+        background-color: blue;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+/* Standard syntax */
+@keyframes growblue {
+    0%   {
+        background-color: white;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    100%  {
+        background-color: blue;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
